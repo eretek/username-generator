@@ -1,0 +1,65 @@
+{
+ "tests": [
+  {
+   "in": {
+    "staff": "Çağrı;Işık",
+    "domain": "contoso.com"
+   },
+   "v": {
+    "upns": [
+     "cagri.isik@contoso.com"
+    ]
+   }
+  },
+  {
+   "in": {
+    "staff": "Ali;Yılmaz\nAli;Yılmaz",
+    "existing": "ALI.YILMAZ@contoso.com",
+    "domain": "contoso.com"
+   },
+   "v": {
+    "upns": [
+     "ali.yilmaz2@contoso.com",
+     "ali.yilmaz3@contoso.com"
+    ]
+   }
+  },
+  {
+   "in": {
+    "staff": "Jürgen;Müller",
+    "domain": "contoso.de",
+    "umlaut": "de"
+   },
+   "v": {
+    "upns": [
+     "juergen.mueller@contoso.de"
+    ]
+   }
+  },
+  {
+   "in": {
+    "staff": "İsmail;IŞIK",
+    "domain": "contoso.com"
+   },
+   "v": {
+    "upns": [
+     "ismail.isik@contoso.com"
+    ]
+   }
+  },
+  {
+   "in": {
+    "staff": "Tekisim",
+    "domain": "contoso.com"
+   },
+   "err": "staff"
+  },
+  {
+   "in": {
+    "staff": "Ali;Veli",
+    "domain": "contoso"
+   },
+   "err": "domain"
+  }
+ ]
+}
